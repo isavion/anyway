@@ -39,4 +39,4 @@ EXPOSE 5000
 
 ENTRYPOINT ["/anyway/docker-entrypoint.sh"]
 
-CMD FLASK_APP=anyway flask run --host 0.0.0.0
+CMD ["flask", "run", "--host", "0.0.0.0"]

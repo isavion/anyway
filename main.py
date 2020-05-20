@@ -7,6 +7,8 @@ import sys
 
 import click
 
+from anyway import app
+
 
 def valid_date(date_string):
     DATE_INPUT_FORMAT = '%d-%m-%Y'
@@ -282,4 +284,4 @@ def accidents_around_schools(start_date, end_date, distance, output_path):
 
 
 if __name__ == '__main__':
-    cli(sys.argv[1:])  # pylint: disable=too-many-function-args
+    app.run(host='0.0.0.0')
